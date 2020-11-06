@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1089083239799",
+    "firebase_url": "https://technerds-dc997.firebaseio.com",
+    "project_id": "technerds-dc997",
+    "storage_bucket": "technerds-dc997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089083239799:android:b4647bca1a5005c8248572",
+        "android_client_info": {
+          "package_name": "com.israis007.technerds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089083239799-8ld8q9a0oa066bokmdkopgknnoj38lk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpotexHDGefWTgOy5Z0G6-yBD1ixdJ6F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089083239799-8ld8q9a0oa066bokmdkopgknnoj38lk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fra_reg_cl_main"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/fra_reg_llc_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Forms"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_title"
+            style="@style/FormsTitle"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fra_reg_til_mail"
+            style="@style/OutlineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/labels_margin"
+            android:layout_marginStart="@dimen/labels_margin"
+            android:layout_marginEnd="@dimen/labels_margin"
+            android:hint="@string/fra_register_h1"
+            android:nextFocusDown="@id/fra_reg_tiet_user"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fra_reg_tiet_mail"
+                style="@style/OutlineEditText.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress"
+                android:digits="@string/TF_Email"
+                android:nextFocusDown="@id/fra_reg_tiet_user"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fra_reg_til_user"
+            style="@style/OutlineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/labels_margin"
+            android:layout_marginStart="@dimen/labels_margin"
+            android:layout_marginEnd="@dimen/labels_margin"
+            android:hint="@string/fra_register_h2"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fra_reg_tiet_user"
+                style="@style/OutlineEditText.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:digits="@string/TF_LettersLowerEnglishWithNumbers"
+                android:nextFocusDown="@id/fra_reg_tiet_pass"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fra_reg_til_pass"
+            style="@style/OutlineEditTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/labels_margin"
+            android:layout_marginStart="@dimen/labels_margin"
+            android:layout_marginEnd="@dimen/labels_margin"
+            android:hint="@string/fra_register_h3"
+            app:passwordToggleEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fra_reg_tiet_pass"
+                style="@style/OutlineEditText.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/TF_LetterLatinPassword"
+                android:inputType="textPassword"
+                android:nextFocusDown="@id/fra_reg_tiet_phone"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fra_reg_til_phone"
+            style="@style/OutlineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/labels_margin"
+            android:layout_marginStart="@dimen/labels_margin"
+            android:layout_marginEnd="@dimen/labels_margin"
+            android:hint="@string/fra_register_h4"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fra_reg_tiet_phone"
+                style="@style/OutlineEditText.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textFilter"
+                android:digits="@string/TF_Phone"
+                android:imeOptions="actionDone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fra_reg_actv_help"
+            style="@style/HelpView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fra_register_t1"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

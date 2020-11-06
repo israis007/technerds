@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Technerds</string>
+    <string name="app_name">TechNerds</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -9,8 +9,17 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be > 8 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="login_title">Log in</string>
-    <string name="fra_login_h1">username:</string>
-    <string name="fra_login_h2">password:</string>
+    <string name="login_title">Login</string>
+    <string name="fra_login_h1">Username:</string>
+    <string name="fra_login_h2">Password:</string>
     <string name="fra_login_t1">Register <u>here</u></string>
+    <string name="register_title">Register New User</string>
+    <string name="fra_register_h1">E-mail:</string>
+    <string name="fra_register_h2">Username:</string>
+    <string name="fra_register_h3">Password:</string>
+    <string name="fra_register_h4">Number Phone:</string>
+    <string name="fra_register_t1">Have you an account?, login <u>here</u></string>
+    <string name="fra_recover_title">Recover Password</string>
+    <string name="fra_recover_h1">E-mail:</string>
+    <string name="fra_recover_t1">Resend activation email <u>here</u></string>
 </resources>
